@@ -13,6 +13,13 @@
 
 // TODO 5: Fill with code CleanUp() method :)
 
+/*ModuleWindow::ModuleWindow(Application* App)
+{
+	win = NULL;
+	screen_surface = NULL;
+}*/
+
+
 bool ModuleWindow::Init()
 {
 	int ok = SDL_Init(SDL_INIT_VIDEO);
@@ -31,7 +38,7 @@ bool ModuleWindow::Init()
 	if (RESIZABLE > 0) flags += SDL_WINDOW_RESIZABLE;
 	if (BORDERLESS > 0) flags += SDL_WINDOW_BORDERLESS;
 	
-	SDL_CreateWindow(WIN_TITLE, NULL,NULL, SCREEN_WIDTH, SCREEN_HEIGHT,flags);
+	win = SDL_CreateWindow(WIN_TITLE, NULL,NULL, SCREEN_WIDTH, SCREEN_HEIGHT,flags);
 	//SDL_CreateTextureFromSurface
 
 	return true;

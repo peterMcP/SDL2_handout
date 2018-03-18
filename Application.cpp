@@ -6,7 +6,7 @@
 Application::Application()
 {
 	modules[0] = win = new ModuleWindow();
-	modules[1] = render = new renderModule();
+	//modules[1] = render = new renderModule();
 }	
 
 bool Application::Init()

@@ -5,7 +5,7 @@
 #include "Module.h"
 #include "renderModule.h"
 
-#define NUM_MODULES 2
+#define NUM_MODULES 1
 
 class ModuleWindow; //trick
 class renderModule; //trick

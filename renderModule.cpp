@@ -4,15 +4,15 @@
 #include "SDL\include\SDL.h"
 //#include "ModuleWindow.h"
 
-bool renderModule::Init()
+/*bool renderModule::Init()
 {
 
-	int ok = SDL_CreateRenderer(, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+	int ok = SDL_CreateRenderer( , -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 	if (ok > 0)
 	{
 		LOG(SDL_GetError());
 
 		return false;
-	}fda
+	}
 
-}
+}*/
