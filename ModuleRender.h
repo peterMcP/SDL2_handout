@@ -1,9 +1,10 @@
 #ifndef __renderModule_H__
 #define __renderModule_H__
 
+//#include "Application.h"
 #include "Module.h"
 #include "SDL\include\SDL.h"
-#include "Globals.h"
+//#include "Globals.h"
 
 // TODO "6": Give a try at creating a render module that just clears screen to black
 
@@ -21,7 +22,7 @@ public:
 public:
 
 	SDL_Renderer* render;
-
+	
 };
 
 #endif // __renderModule_H__

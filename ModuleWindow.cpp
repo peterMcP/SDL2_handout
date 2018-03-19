@@ -19,7 +19,6 @@
 	screen_surface = NULL;
 }*/
 
-
 bool ModuleWindow::Init()
 {
 	int ok = SDL_Init(SDL_INIT_VIDEO);
