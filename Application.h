@@ -3,20 +3,23 @@
 
 #include "Globals.h"
 #include "Module.h"
-#include "renderModule.h"
+#include "ModuleWindow.h"
+#include "ModuleRender.h"
 
-#define NUM_MODULES 1
+#define NUM_MODULES 2
 
 class ModuleWindow; //trick
-class renderModule; //trick
+class ModuleRender; 
 
 class Application
 {
 public:
 
 	Module* modules[NUM_MODULES];
+	
 	ModuleWindow* win;
-	renderModule* render;
+	ModuleRender* render;
+	
 
 public:
 

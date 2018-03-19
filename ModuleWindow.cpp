@@ -30,8 +30,6 @@ bool ModuleWindow::Init()
 		return false;
 	}
 
-	SDL_WINDOW_RESIZABLE;
-
 	Uint32 flags = NULL;
 	
 	if (FULLSCREEN > 0) flags += SDL_WINDOW_FULLSCREEN;
@@ -39,7 +37,15 @@ bool ModuleWindow::Init()
 	if (BORDERLESS > 0) flags += SDL_WINDOW_BORDERLESS;
 	
 	win = SDL_CreateWindow(WIN_TITLE, NULL,NULL, SCREEN_WIDTH, SCREEN_HEIGHT,flags);
-	//SDL_CreateTextureFromSurface
+	
+	if (win == NULL)
+	{
+		LOG("window creation error %s\n", SDL_GetError());
+	}
+	else
+	{
+		screen_surface = SDL_GetWindowSurface(win);
+	}
 
 	return true;
 }

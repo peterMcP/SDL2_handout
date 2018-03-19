@@ -6,6 +6,8 @@
 
 // TODO 1: Create the declaration of ModuleWindow class
 
+
+
 class ModuleWindow : public Module
 {
 public:
@@ -14,6 +16,8 @@ public:
 
 	bool Init();// { return true; }
 	bool CleanUp();// { return true; }
+	//friend ModuleRender;
+	
 
 public:
 

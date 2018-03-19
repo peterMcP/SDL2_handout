@@ -30,7 +30,7 @@
     <ClInclude Include="MemLeaks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="renderModule.h">
+    <ClInclude Include="ModuleRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,7 +44,7 @@
     <ClCompile Include="Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="renderModule.cpp">
+    <ClCompile Include="ModuleRender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

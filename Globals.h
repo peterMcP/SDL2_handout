@@ -3,6 +3,7 @@
 
 #include <windows.h>
 #include <stdio.h>
+#include "SDL\include\SDL.h"
 
 #define LOG(txt) OutputDebugString(txt)
 
@@ -23,6 +24,11 @@ enum update_status
 #define FULLSCREEN 0
 #define RESIZABLE 1
 #define BORDERLESS 0
+
+//more
+
+//SDL_Window* win = nullptr;
+//SDL_Renderer* render = nullptr;
 
 
 #endif // __GLOBALS_H__
